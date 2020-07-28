@@ -1,7 +1,6 @@
 ## Proje Bilgileri
 - Java platformu ile geliştirilmiş CSV dosyasından İYS API'ye çoklu izin ekleme örnek projesidir.
 - Windows işletim sisteminde geliştirilmiştir.
-- Projenin kaynak kodlarına ulaşmak için [tıklayınız](https://apidestek.iys.org.tr/iys/api/ornek-projeler/java/csv-ile-toplu-izin-gonderme)
 
 ## Derleme
 Projeyi build etmek için aşağıdaki adımları uygulayın.
@@ -34,7 +33,7 @@ Projeyi build etmek için aşağıdaki adımları uygulayın.
 ## Nasıl kullanılır?
 - Projeyi aşağıdaki komutla bilgisayarınıza herhangi bir klasöre klonlayın.
 ```
-git clone https://git.vkk.io/iys/api/samples/api-java.git
+git clone https://apidestek.iys.org.tr/iys/api/ornek-projeler/java/csv-ile-toplu-izin-gonderme.git
 ```
 - Gerekli diğer dosyalar proje klasörü altında bulunmaktadır.
 - `client-1.0.0-RELEASE.jar` çoklu izinleri gönderen java client örnek uygulamasıdır.
