@@ -14,9 +14,9 @@ Projeyi build etmek için aşağıdaki adımları uygulayın.
 5. `client-1.0.0-RELEASE.jar` dosyasını herhangi bir klasöre kopyalayın. aynı klasör içerisine bilgisayarınıza klonladığınız csv klasörünü de kopyalayarak çalışır hale getirebilirsiniz.
 
 ## Konfigürasyonlar
-```javascript
-`csv/config.yml` dosyası içeriği, kullanıcıya özeldir ve hesap bilgileriniz ile güncellenmelidir.
-```
+
+> `csv/config.yml` dosyası içeriği, kullanıcıya özeldir ve hesap bilgileriniz ile güncellenmelidir.
+
 - `iysCode`, `brandCode`, `user` ve `password` bilgilerini ilgili yerlere giriniz.
 - csv klasörü altında bulunan data.csv dosyasında bulunan örnek izinlerdeki gibi izinlerinizi satır satır ekleyiniz.
 - Konfigürasyonlar hazır olduktan sonra `start.cmd` dosyasını sağ tıklayıp yönetici modunda çalıştırın.
