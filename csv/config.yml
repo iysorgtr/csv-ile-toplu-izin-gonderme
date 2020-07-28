@@ -1,0 +1,38 @@
+#csv dosya formatı
+#type,source,recipient,status,consentDate,recipientType
+
+#kullanıcı adı ve şifre
+#apilere erişim yetkisi olan hizmet sağlayıcıya ait kullanıcı adı ve şifre tanımlaması
+#şifre alanının sonunda boşluk olmadığından emin olun
+user:test@testemail.com
+password:Test1234
+#iys code ve brandcode
+#hizmet sağlayıcıya ait iyscode ve işlem yapılacak bayiye ait brandcode
+iyscode:23000
+brandcode:23100
+#batchcount minimum 1, maksimum 1000 değeri alabilir.
+#csv dosyasından belirtilen değer kadar datayı okuyup 1 defadan gönderir, 
+#örneğin batchcount:100 seçilirse ve csv dosyasında 5000 kayıt varsa, kayıtlar 100 er 100 er yollanır, toplam 50 request ile tüm kayıtlar gönderilmiş olur.
+#senkron seceneği 1 durumunda, saniyede batchcount * 500 request ile tüm kayıtlar paralel bir şekilde yollanır.
+#eger senkron 1 ise, batchcount maksimum 50000, 0 ise maksimum 1000 değeri alabilir.
+#default değer 100
+batchcount:100
+#token servisi kullanıcının işlem yapabilmesi için jeton aldığı servistir.
+tokenservice:https://api.sandbox.iys.org.tr/oauth2/token
+#batch servisi toplu bayi izin ekleme servisidir.
+#bu alanda #IYSCODE# ile #BRANDCODE# path parametresi olarak tanımlandığı için, url de ilgili bölümde tanımlanması gerekir.
+batchservice:https://api.sandbox.iys.org.tr/sps/#IYSCODE#/brands/#BRANDCODE#/consents/request
+#Query servisi toplucan eklenen izinlerin durumunu sorgulama servisidir.
+queryservice:https://api.sandbox.iys.org.tr/sps/#IYSCODE#/brands/#BRANDCODE#/consents/request/#REQUESTID
+#versiyon kontrol servisi
+versionservice:https://api.sandbox.iys.org.tr/version
+#log level 1: tüm logları gösterir.
+#log level 0: özet log gösterir.
+#default değer 0
+loglevel:0
+#Servis izin ekleme ya da izinleri sorgulamak için kullanılabilir
+#operationtype:1 toplu izin ekleme işlemi yapar
+#operationtype:2 gönderilen izinlerin durumunu sorgular
+#Default değer 1
+operationtype:1
+

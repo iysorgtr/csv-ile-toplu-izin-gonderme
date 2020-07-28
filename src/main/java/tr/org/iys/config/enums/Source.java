@@ -1,0 +1,16 @@
+package tr.org.iys.config.enums;
+
+public enum Source {
+	HS_2015,
+	HS_FIZIKSEL_ORTAM,
+	HS_ISLAK_IMZA,
+	HS_ETKINLIK,
+	HS_ATM,
+	HS_EORTAM,
+	HS_WEB,
+	HS_MOBIL,
+	HS_MESAJ,
+	HS_EPOSTA,
+	HS_CAGRI_MERKEZI,
+	HS_SOSYAL_MEDYA
+}
