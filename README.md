@@ -1,20 +1,20 @@
 ## Proje Bilgileri
-- Java platformu ile geliştirilmiş CSV dosyasından İYS API'ye çoklu izin ekleme örnek projesidir.
+- Java platformuyla geliştirilmiş `*.csv` dosyasından İYS API'ye çoklu izin ekleme örnek projesidir.
 - Windows işletim sisteminde geliştirilmiştir.
 
 ## Derleme
 Projeyi build etmek için aşağıdaki adımları uygulayın.
 
-1. Bilgisayarınıza Java 1.8 jdk yüklü olduğundan emin olun. yüklü değilse [buraya](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) tıklayarak indirebilirsiniz.
+1. Bilgisayarınıza Java 1.8 jdk yüklü olduğundan emin olun. Yüklü değilse [buraya](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) tıklayarak indirebilirsiniz.
 2. [Maven](https://maven.apache.org/)'ın 3.6.3 sürümünü indrip windows için environment variable ayarlarını yapın.
 3. Proje klasörü içerisinde aşağıdaki komutu çalıştırın  
-```mvn -U clean install -DskipTest```
+  - ```mvn -U clean install -DskipTest```
 4. Proje başarılı bir şekilde derlendikten sonra target klasörü altına `client-1.0.0-RELEASE.jar` dosyası oluşturulacaktır.
-5. `client-1.0.0-RELEASE.jar` dosyasını herhangi bir klasöre kopyalayın. aynı klasör içerisine bilgisayarınıza klonladığınız csv klasörünü de kopyalayarak çalışır hale getirebilirsiniz.
+5. `client-1.0.0-RELEASE.jar` dosyasını herhangi bir klasöre kopyalayın. Aynı klasör içerisine bilgisayarınıza klonladığınız `csv` klasörünü de kopyalayarak çalışır hale getirebilirsiniz.
 
 ## Konfigürasyonlar
 
-> `csv/config.yml` dosyası içeriği, kullanıcıya özeldir ve hesap bilgileriniz ile güncellenmelidir.
+> `csv/config.yml` dosyası içeriği, kullanıcıya özeldir ve hesap bilgilerinizle güncellenmelidir.
 
 - `iysCode`, `brandCode`, `user` ve `password` bilgilerini ilgili yerlere giriniz.
 - csv klasörü altında bulunan data.csv dosyasında bulunan örnek izinlerdeki gibi izinlerinizi satır satır ekleyiniz.
@@ -33,7 +33,7 @@ Projeyi build etmek için aşağıdaki adımları uygulayın.
 ## Nasıl kullanılır?
 - Projeyi aşağıdaki komutla bilgisayarınıza herhangi bir klasöre klonlayın.
 ```
-git clone https://apidestek.iys.org.tr/iys/api/ornek-projeler/java/csv-ile-toplu-izin-gonderme.git
+git clone https://github.com/iysorgtr/csv-ile-toplu-izin-gonderme.git
 ```
 - Gerekli diğer dosyalar proje klasörü altında bulunmaktadır.
 - `client-1.0.0-RELEASE.jar` çoklu izinleri gönderen java client örnek uygulamasıdır.
@@ -41,8 +41,8 @@ git clone https://apidestek.iys.org.tr/iys/api/ornek-projeler/java/csv-ile-toplu
 - `resume.cmd` dosyası, izinler yazıldıktan sonra alınan hatalar varsa çalıştırılacak dosyadır.  
 - csv klasörü altında yer alan `data.csv` dosyası, çoklu halde eklenecek izinlerin bulunduğu dosyadır.  
 - csv klasörü altında yer alan `config.yml` dosyası, servis için konfigürasyonların yapıldığı, `iysCode`, `brandCode`, kullanıcı adı, şifre gibi bilgilerin kaydedileceği config dosyasıdır.  
-- Klonladığınız klasöre girerek proje klasörüne uaşın.
+- Klonladığınız klasöre girerek proje klasörüne ulaşın.
 - csv klasörü altında bulunan `config.yml` dosyasını, herhangi bir editör yardımıyla düzenleyin.  
 
-İYS Api hakkında daha detaylı bilgi almak için [Geliştirici Merkezi](https://dev.iys.org.tr/)ni ziyaret edebilirsiniz.
+İYS API hakkında daha detaylı bilgi almak için [Geliştirici Merkezi](https://dev.iys.org.tr/)'ni ziyaret edebilirsiniz.
 
